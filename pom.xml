@@ -5,12 +5,13 @@
     <groupId>com.renguangli</groupId>
     <artifactId>spring-cloud-alibaba-samples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>spring-cloud-alibaba-samples</name>
     <description>spring-cloud-alibaba-samples</description>
     <modules>
         <module>spring-cloud-nacos</module>
+        <module>spring-cloud-gateway</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -22,6 +23,13 @@
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.7.RELEASE</spring-cloud-alibaba.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
